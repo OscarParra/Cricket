@@ -16,7 +16,6 @@
 		EBA7A7E21CB33FA4002036F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBA7A7E01CB33FA4002036F7 /* LaunchScreen.storyboard */; };
 		EBA7A7ED1CB33FA5002036F7 /* CricketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA7A7EC1CB33FA5002036F7 /* CricketTests.m */; };
 		EBA7A7F81CB33FA5002036F7 /* CricketUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA7A7F71CB33FA5002036F7 /* CricketUITests.m */; };
-		EBA7A8071CB33FC3002036F7 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA7A8061CB33FC3002036F7 /* Game.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +53,6 @@
 		EBA7A7F31CB33FA5002036F7 /* CricketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CricketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA7A7F71CB33FA5002036F7 /* CricketUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CricketUITests.m; sourceTree = "<group>"; };
 		EBA7A7F91CB33FA5002036F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBA7A8051CB33FC3002036F7 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
-		EBA7A8061CB33FC3002036F7 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +107,6 @@
 				EBA7A7D31CB33FA4002036F7 /* AppDelegate.m */,
 				EBA7A7D51CB33FA4002036F7 /* ViewController.h */,
 				EBA7A7D61CB33FA4002036F7 /* ViewController.m */,
-				EBA7A8051CB33FC3002036F7 /* Game.h */,
-				EBA7A8061CB33FC3002036F7 /* Game.m */,
 				EBA7A7D81CB33FA4002036F7 /* Main.storyboard */,
 				EBA7A7DE1CB33FA4002036F7 /* Assets.xcassets */,
 				EBA7A7E01CB33FA4002036F7 /* LaunchScreen.storyboard */,
@@ -281,7 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBA7A8071CB33FC3002036F7 /* Game.m in Sources */,
 				EBA7A7D71CB33FA4002036F7 /* ViewController.m in Sources */,
 				EBA7A7DD1CB33FA4002036F7 /* Cricket.xcdatamodeld in Sources */,
 				EBA7A7D41CB33FA4002036F7 /* AppDelegate.m in Sources */,
@@ -428,10 +422,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Cricket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cs411s16.Cricket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -439,10 +436,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Cricket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cs411s16.Cricket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -511,6 +511,7 @@
 				EBA7A7FE1CB33FA5002036F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBA7A7FF1CB33FA5002036F7 /* Build configuration list for PBXNativeTarget "CricketTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +520,7 @@
 				EBA7A8011CB33FA5002036F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBA7A8021CB33FA5002036F7 /* Build configuration list for PBXNativeTarget "CricketUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +529,7 @@
 				EBA7A8041CB33FA5002036F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
